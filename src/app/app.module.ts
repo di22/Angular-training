@@ -1,16 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './content/app/app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {RoutesModule} from './content/routes/routes.module';
+
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RoutesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
